@@ -86,6 +86,12 @@ function CustomTable() {
         Loading...
       </h1>
     );
+  } else if (searchTerm && info.length === 0) {
+    return (
+      <h1 className="text-2xl text-center text-gray-400 font-bold w-full sm:px-6 lg:px-8">
+        No Record Found
+      </h1>
+    );
   } else {
     return (
       <>

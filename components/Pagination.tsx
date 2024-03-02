@@ -25,10 +25,10 @@ const Pagination: React.FC<PaginationProps> = ({
         <button
           key={page}
           onClick={() => setCurrentPage(page)}
-          className={`w-10 h-10 font-medium text-black text-lg mx-1 rounded-md focus:outline-none ${
+          className={`w-10 h-10 shadow-md border border-white font-medium text-black text-lg mx-1 rounded-md focus:outline-none ${
             currentPage === page
-              ? "bg-slate-400 text-white" // Active page style
-              : "bg-transparent text-white border border-white hover:bg-slate-600 hover:text-white" // Inactive page style
+              ? "bg-slate-400 shadow-md" // Active page style
+              : "bg-transparent  hover:bg-slate-600 hover:text-white" // Inactive page style
           }`}
         >
           {page}
